@@ -1,5 +1,24 @@
+const header = document.querySelector('header');
+window.addEventListener('scroll', handleNavTop)
+
+function handleNavTop (e) {
+    header.classList.toggle('nav-top', window.scrollY > 0)
+}
+
+/*  */
+
+const navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(link => link.addEventListener('click', handleNavLink))
+
+function handleNavLink (e) {
+    const isActive = document.querySelector('.navbar-active');
+    if (isActive) toggleNavMenu();
+}
+
+/*  */
+
 const allEvents = ['mouseup', 'keyup', 'resize'];
-allEvents.forEach(listener => window.addEventListener(listener, handleEvents))
+allEvents.forEach(listener => window.addEventListener(listener, handleNavEvents))
 
 function toggleNavMenu () {
     const menuBtn = document.querySelector('.menu-btn i');
@@ -7,14 +26,14 @@ function toggleNavMenu () {
     menuBtn.classList.toggle('fa-times');
     
     const navBar = document.querySelector('.navbar');
-    navBar.classList.toggle('nav-active');
+    navBar.classList.toggle('navbar-active');
     document.body.classList.toggle('lock');
 }
 
-function handleEvents (e) {
+function handleNavEvents (e) {
     e.preventDefault()
     const navBar = document.querySelector('.navbar');
-    const isActive = navBar.classList.contains('nav-active');
+    const isActive = navBar.classList.contains('navbar-active');
     const notOpen = document.querySelector('.fa-bars') === e.target;
     const isClickedOutside = e.target !== window && !navBar.contains(e.target);
     const [ESCAPE, DESKTOP] = [27, 650];
