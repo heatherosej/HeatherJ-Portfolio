@@ -37,7 +37,7 @@ header::before {
     left: 0;
     z-index: 9990;
     transition: clip-path 0.4s ease;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3.5vw), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.8vw), 0 100%);
 }
 header .web-layout {
     display: flex;
@@ -72,12 +72,18 @@ header .web-layout {
     font-size: 15px;
     /* font-weight: 300; */
 }
-.main-links,
-.h-contact-links 
+.main-links
 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.h-contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
 }
 .main-links li:not(:last-child) { margin-right: 1.25em; }
 .h-contact-links li:not(:first-child) { margin-left: 1.25em; }
@@ -85,6 +91,7 @@ header .web-layout {
 .h-contact-links #instagram { font-size: 25px; }
 .h-contact-links #email { font-size: 28px; }
 .h-contact-links #phone { font-size: 23px; }
+
 /* display: flex; */
 .menu-btn {
     cursor: pointer;

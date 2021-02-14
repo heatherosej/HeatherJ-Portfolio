@@ -36,7 +36,8 @@ body {
   }
 
   a {
-    text-decoration: none;  
+    text-decoration: none; 
+    color:#000; 
   }
 
 .allcontent {
@@ -76,7 +77,7 @@ body {
   width: 38em;
   justify-content: center;
   z-index: 0;
-  margin-left 2em;
+  margin-left: 2em;
 }
 
 #name {
@@ -311,39 +312,61 @@ h3 {
     margin-bottom: -3px;
 }
 
-
-
-@media only screen and (max-width: 825px){
-
-
-.mobileFlex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  margin-bottom: 2rem;
-  align-items: center;
-}
-.copyarea, .hero, .rgraphic, .leftgraphic {
+.mobilegridtop{
   display: none;
 }
 
-.heroMobile {
-  margin: 50px 0px 25px 0px;
-}
+@media only screen and (max-width: 825px){
+  .copyarea, .hero, .rgraphic, .leftgraphic {
+    display: none;
+  }
+
+  /* .mobilegridtop {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 450px));
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  margin-top: -4em;
+  grid-template-columns: repeat(3, [col] 33.33% ) ;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 0px;
+  background-color: #fff;
+  position: relative;
+} */
+
 .copyareaMobile {
-  display: flex;
-  flex-direction: column;
+margin: 1.5em;
 }
-.allcontent {
-  max-height: none;
+
+/* .textmobile{
+  grid-column: col  1  / span  2;
+  grid-row: row 1;
+} */
+
+h3 {
+  font-size: 2.5em;
+  letter-spacing: .1em;
+  font-family: 'TradeGothicLTStd-boldExt', sans-serif;
 }
-#face {
-  max-width: 300px;
+/* .myface-mobile{
+  grid-column: col  3 / span  1;
+  grid-row: row 1; */
 }
-.text {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+
+#facemobile {
+  max-width: 150px;
 }
+
+/* .question{
+  grid-column: col  1 / span  3;
+  grid-row: row 2;
+} */
+
+/* .CTA-Buttons-mobile{
+  grid-column: col  1 / span  3;
+  grid-row: row 3;
+} */
 
 .footerbottom, .work {
   overflow: hidden;
@@ -355,10 +378,10 @@ h3 {
 { left: 0; }
 
 
-.wrapper {
-  display: none;
+/* .wrapper {
+  display: none; */
 }
-.wrapperMobile {
+/* .wrapperMobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,8 +393,18 @@ h3 {
   padding-bottom: 1em;
   padding-left: 2em;
 }
+
+.c, .b, .i, .h{
+  display: none;
+} */
+
+/* #tb {
+  width: 100%;
+  height: auto;
+} */
+
 /* closing bracket for media query -- don't delete */
-}
+/* } */
 
 
 
