@@ -108,7 +108,7 @@
       </div>
     </div>
     <div class="info-bar">
-      <p>&quot;Memory and follow through are, like, the biggest things that keep me from achieving a goal.&quot;</p>
+      <p>"Memory and follow through are, like, the biggest things that keep me from achieving a goal."</p>
       <span>—Christina Coates, User Research Interview</span>
     </div>
   </section>
@@ -120,11 +120,13 @@
       <span class="task-buddy-h1">Latest Design</span>
       <div class="container-child">
         <div class="latest-design-section">
-          <div class="gif-section">Gif Placeholder</div>
+          <div class="gif-section">
+            <div><img src="./Images/TB-2.0-Full.gif" alt=""></div>
+          </div>
           <div class="orangebox-section">
             <div class="orange-box">
               <p class="floating-inner" id="special">
-                <img src="./Images/info.png" alt="Exclamation Mark">
+                <img src="./Images/info.png" alt="Exclamation Mark" class="latest-design-exc">
                 We included an animal to test the Tamagotchi effect (hello fellow 90s kid!)
                 — which is the development of emotional attachment with machines. Humans tend to attach emotionally to
                 things which otherwise do not have any emotions.
@@ -171,9 +173,9 @@
   <!-- The Tab Menu -->
   <section class="task-buddy-wrapper the-tab-menu">
     <div class="the-tab-menu-list">
-      <a href="#the-data" class="the-data-tab tab-item tab-active">The Data</a>
-      <a href="#the-content-strategy" class="the-content-strategy-tab tab-item">The Content Strategy</a>
-      <a href="#the-product-design" class="the-product-design-tab tab-item">The Product Design</a>
+      <a href="#the-data" class="the-data-tab tab-item tab-active">Data</a>
+      <a href="#the-content-strategy" class="the-content-strategy-tab tab-item">Content</a>
+      <a href="#the-product-design" class="the-product-design-tab tab-item">Design</a>
     </div>
   </section>
   <!-- End The Tab Menu -->
@@ -641,8 +643,9 @@
               </a>
             </div>
             <div class="diagram">
-              <a href="./Images/TB_WF2-crop.png" data-lightbox="image-4" data-title="Brainstorm 3"></a>
+              <a href="./Images/TB_WF2-crop.png" data-lightbox="image-4" data-title="Brainstorm 3">
                 <img src="./Images/TB_WF2-crop_sm.png" alt="Gallery image 4">
+              </a>
             </div>
           </div>
 
@@ -652,7 +655,7 @@
             <section class="low-fi-section">
               <div class="orange-box">
                 <p class="floating-inner">
-                  <img src="./Images/info.png" alt="Exclamation Mark">
+                  <img src="./Images/info_whiteBG.png" alt="Exclamation Mark" class="proto-exc">
                   Prototype Connections in Figma
                   <img class="proto-img" src="./Images/TB-P1-Connections-1.0.png" alt="Prototype Connections in Figma">
                 </p>
@@ -661,9 +664,9 @@
                 <p class="wide-para">In our first draft we <strong>prioritized clear labeling</strong> and a simple user interface. We focused on task management, 
                   list organization, task timer, progress tracking and a calendar.
                 </p>
-                <div class="low-fi-btn-container">
-                  <a href="https://www.figma.com/file/51nGx25cyaXJk6vdadX6Ip/Task-Buddy-First-Wireframes?node-id=0%3A1" target="_blank" 
-                  class="btn-danger flow-fi-btn" tabindex="1">Open low-fi prototype</a>
+                <div class="low-fi-btn-con tainer">
+                  <a href="https://www.figma.com/file/t5tE3ygcqPPBY0PJbWQinX/iOS-Wireframes-Task-Buddy-2.0?node-id=0%3A1" target="_blank" 
+                  class="btn-danger low-fi-btn" tabindex="1">Open low-fi prototype</a>
                 </div>
                 <!-- <a class="btn-disabled">Discover More!</a> -->
               </div>
@@ -725,7 +728,7 @@
         </div>
         <div class="interaction-proto">
           <div class="left">
-            <img class="gif_img" src="./Images/Tb-P2-home_2.gif" alt="buddy home">
+            <img class="gif_img" src="./Images/TaskBuddyHome--P2.gif" alt="buddy home">
           </div>
           <div class="right">
             <p>I updated the avatar area to a flat illustration of a dog to tie into contemporary aesthetics. I included speech bubbles to enhance the feeling of the <b>pet’s interaction with the user and create an emotional connection..</b></p>
@@ -734,7 +737,7 @@
             <p>We simplified the bottom navigation and moved the profile to the top right, to tap into <b>user’s muscle memory</b> from other apps.</p>
             <div class="orange-box">
               <p class="floating-inner">
-                <img src="./Images/info.png" alt="Exclamation Mark">
+                <img src="./Images/info.png" alt="Exclamation Mark" class="task-buddy-exc">
                 I know this isn’t a typical low fidelity prototype, but I wanted to get an idea of user’s graphics preferences with this iteration. Will we pay for it? Yes, the answer is yes.
               </p>
             </div>
@@ -772,8 +775,8 @@
             <div class="bottom">
               <div>
                 <div class="orange-box buddy-tone">
-                  <div><img src="./Images/info.png" alt="Exclamation Mark"></div>
-                  <p class="floating-inner">
+                  <p class="floating-inner buddy-p">
+                    <img src="./Images/info.png" alt="Exclamation Mark" class="buddy-tone-exc">
                     Buddy's Tone of Voice!
                   </p>
                 </div>
@@ -836,14 +839,12 @@
           <div class="proto-demo">
             <div class="proto-demo-left">
               <div class="orange-box buddy-tone">
-                <div><img src="./Images/info.png" alt="Exclamation Mark"></div>
-                <p class="floating-inner">
+                <div><img src="./Images/info.png" alt="Exclamation Mark" class="try-clickable-exc"></div>
+                <p class="floating-inner clickable-p">
                   Try the Clickable Prototype!
                 </p>
               </div>
-              <div class="open-proto-btn">
-                <span>Open Prototype 2.0</span>
-              </div>
+                <a class="btn-warning low-fi-btn open-proto-btn" href="https://www.figma.com/file/t5tE3ygcqPPBY0PJbWQinX?embed_host=share&kind=&node-id=242%3A53435" target="_blank">Open Prototype 2.0</a>
             </div>
             <div class="proto-demo-right">
               <div class="iframe">
