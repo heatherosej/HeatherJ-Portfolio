@@ -45,7 +45,7 @@ body {
   flex-direction: row;
   background-color: white;
   justify-content: space-around;
-  margin-top: 5em;
+  margin-top: min(12%);
   max-height: 860px; 
 } 
 .mobileFlex {
