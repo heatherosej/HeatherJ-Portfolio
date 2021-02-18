@@ -18,8 +18,7 @@
 
 /* Header */
 header {
-    min-height: 130px;
-    /* background-color: transparent; */
+    height: 100px;
     display: flex;
     align-items: center;
     position: sticky;
@@ -29,6 +28,7 @@ header {
 }
 header::before {
     content: '';
+    /* background-color: red; */
     background-color: black;
     width: 100%;
     height: 100%;
@@ -37,18 +37,21 @@ header::before {
     left: 0;
     z-index: 9990;
     transition: clip-path 0.4s ease;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.8vw), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
 }
 header .web-layout {
     display: flex;
     flex-flow: wrap;
+    /* align-items: center; */
 }
 .logos {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     margin-right: 1em;
     z-index: 9991;
+    transition: all 0.4s ease;
+    transition-property: width, height;
 }
 .logos img {
     width: 100%;
@@ -70,20 +73,14 @@ header .web-layout {
 .navbar a:not(i) { 
     font-family: ballinger-mono, sans-serif; 
     font-size: 15px;
-    /* font-weight: 300; */
+    font-weight: 300;
 }
-.main-links
+.main-links,
+.h-contact-links 
 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.h-contact-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1em;
 }
 .main-links li:not(:last-child) { margin-right: 1.25em; }
 .h-contact-links li:not(:first-child) { margin-left: 1.25em; }
@@ -91,8 +88,6 @@ header .web-layout {
 .h-contact-links #instagram { font-size: 25px; }
 .h-contact-links #email { font-size: 28px; }
 .h-contact-links #phone { font-size: 23px; }
-
-/* display: flex; */
 .menu-btn {
     cursor: pointer;
     outline: none;
@@ -110,14 +105,26 @@ header .web-layout {
 header.nav-top::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+header.nav-top {
+    height: 75px;
+}
+
+header.nav-top .web-layout {
+    align-items: center;
+}
+
+header.nav-top .logos {
+    width: 65px;
+    height: 65px;
+}
 header.nav-top .navbar {
     transform: translateY(0);
 }
 
 .nav-active::after {
     content: '';
+    border-bottom: 5px solid #FCB140;
     width: 100%;
-    border-bottom: 5px solid #fff;
     position: absolute;
     left: 0;
     bottom: -25%;
@@ -125,12 +132,19 @@ header.nav-top .navbar {
 
 @media only screen and (max-width: 650px) {
     header .web-layout { justify-content: space-between; }
+    
+    .logos {
+        width: 65px;
+        height: 65px;
+    }
+
     .navbar { 
         background-color: black;
         flex-flow: column;
         width: 100%;
         position: absolute;
-        top: -120%;
+        /* top: -120%; */
+        top: -200%;
         right: 0;
         transition: all 0.3s ease;
         z-index: -1;
@@ -157,7 +171,7 @@ header.nav-top .navbar {
 /* Footer */
 footer {
     position: relative;
-    min-height: 75px;
+    height: 80px;
     display: flex;
     align-items: center;
 }
@@ -165,23 +179,23 @@ footer::before {
     content: '';
     background-color:#FCB140;
     width: 100%;
-    height: 171%;
+    height: 100%;
     position: absolute;
-    top: -29px;
+    top: 0;
     left: 0;
-    clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%);
-    transform: scaleX(-1);
+    clip-path: polygon(0 0, 100% calc(10% + 1vw), 100% 100%, 0 100%);
 }
 footer .web-layout {
-    padding-top: 2vw;
+    padding-top: 1vw;
     display: flex;
     flex-flow: wrap;
     align-items: center;
     justify-content: space-between;
 }
 .f-contact-links { 
+    margin: 0;
     display: flex; 
-    z-index: 9990; 
+    z-index: 9990;
 }
 .f-contact-links li:not(:last-child) { margin-right: 2.25em; }
 .f-contact-links a { 
@@ -191,9 +205,12 @@ footer .web-layout {
 }
 .f-contact-links a:hover { color: #ffffff; }
 
-.copyrights { 
-    /* display: flex; */
+.copyrights {
+    height: 100%;
+    margin: 0 !important;
+    display: flex;
     flex-flow: wrap;
+    /* transform: translateY(0.25em); */
     z-index: 9990;
 }
 .copyrights span { 
@@ -202,15 +219,18 @@ footer .web-layout {
 }
 
 @media only screen and (max-width: 650px) {
+    footer {
+        height: 100%;
+        min-height: 75px;
+    }
     footer::before {
-        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% calc(5% + 1vw), 100% 100%, 0 100%);
     }
     footer .web-layout {
         flex-flow: column;
         align-items: flex-start;
-        padding-top: 5vw;
     }
-}
-@media only screen and (max-width: 400px) {
-    footer .web-layout { padding-top: 9vw; }
+    .f-contact-links,
+    .copyrights
+    { padding: 0.75em 0 !important }
 }
