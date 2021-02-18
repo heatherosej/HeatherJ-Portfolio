@@ -178,6 +178,8 @@ h3 {
 /*  GRID OF TWO  */
 .span_2_of_2 {
 	width: 30%;
+  text-align: right;
+  position: relative;
 }
 .span_1_of_2 {
 	width: 66%;
@@ -186,21 +188,19 @@ h3 {
     width: 110%;
     height: auto;
     margin-bottom: -4px;}
-
-.mintline
-  { position: relative; 
+.mintline{ 
+  /* position: relative;  */
   text-decoration: none;}
-
 .mintline::after{
     content: "";
     border-top: 0.6em solid #BEE1D6;
     height: 0;
     position: absolute;
-    top: 2.0em;
+    top: 3.0em;
     z-index: 0;   
     text-decoration: none; 
-    width: 450px;
-    right:10em;
+    width: 420px;
+    right: 0;
   }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */

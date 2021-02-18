@@ -75,6 +75,12 @@ header .web-layout {
     font-size: 15px;
     font-weight: 300;
 }
+#activepage {
+    border-bottom: 8px solid orange;
+    padding-bottom: 0.6em;   
+    color: #BEE1D6;
+}
+
 .main-links,
 .h-contact-links 
 {

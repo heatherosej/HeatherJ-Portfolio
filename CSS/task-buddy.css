@@ -244,7 +244,7 @@ p > .strong {
 }
 
 .task-buddy .content {
-  margin-top: 200px;
+  margin-top: 130px;
   margin-bottom: 40px;
   position: relative;
 }
@@ -252,12 +252,12 @@ p > .strong {
 .task-buddy-text {
   background: #BEE1D6;
   max-width: 87%;
-  height: 57px;
+  height: 40px;
   min-width: auto;
   display: block;
   word-wrap: break-word;
   padding-left: .9em;
-  line-height: 60px;
+  line-height: 57px;
 }
 
 .task-buddy-floating-text {
