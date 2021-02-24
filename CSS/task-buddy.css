@@ -1387,6 +1387,10 @@ The Idea / The Details
 	padding: 0 1em;
 }
 
+.smile{
+  width: 8%
+}
+
 @keyframes ping {
   0% {
         clip-path: circle(0% at center);
