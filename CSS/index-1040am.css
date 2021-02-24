@@ -411,7 +411,7 @@ h3 {
     margin-top: -1.5em;
   }
   }
-  @media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px){
     .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
       font-size: .75em;
     }
@@ -419,6 +419,39 @@ h3 {
       font-size: 1.3em;
       margin-bottom: 1em;
     }
+  }
+@media only screen and (max-width: 700px){
+  .copyarea{
+    margin-top: -1.5em;
+  }
+  }
+@media only screen and (max-width: 600px){
+  .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
+    font-size: .7em;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+}  
+  @media only screen and (max-width: 400px){
+    .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
+      font-size: .5em;
+    }
+    .copyarea{
+      margin-top: -1.5em;
+    }
+#name{
+  font-size: 1.3em !important;
+}
+
+h3 {
+      font-size: .9em !important;
+      margin-bottom: 2.5em;
+    }
+  }    
+        
+
 /* closing bracket for media query -- don't delete */
 }
 
