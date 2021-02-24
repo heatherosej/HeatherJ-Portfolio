@@ -18,7 +18,7 @@
 
 /* Header */
 header {
-    height: 100px;
+    height: 120px;
     display: flex;
     align-items: center;
     position: sticky;
@@ -37,7 +37,7 @@ header::before {
     left: 0;
     z-index: 9990;
     transition: clip-path 0.4s ease;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.5vw), 0 100%);
 }
 header .web-layout {
     display: flex;
