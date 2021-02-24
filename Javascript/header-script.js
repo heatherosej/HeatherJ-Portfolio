@@ -1,10 +1,11 @@
 const header = document.querySelector('header');
+const topSection = document.querySelector('.top-section');
 window.addEventListener('scroll', handleNavTop)
 
 function handleNavTop (e) {
-    header.classList.toggle('nav-top', window.scrollY > 0)
+  console.dir( topSection.offsetHeight )
+  header.classList.toggle('nav-top', window.scrollY >= topSection.offsetHeight)
 }
-
 /*  */
 
 const navLinks = document.querySelectorAll('.navbar a');
