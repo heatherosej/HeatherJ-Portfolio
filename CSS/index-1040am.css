@@ -177,9 +177,10 @@ h3 {
     top: 2.0em;
     z-index: 0;   
     text-decoration: none; 
+    right:0;
   }
   .test::after { width: 400px; }
-  .test2::after { width: 450px; right: 0; }  
+  .test2::after { width: 500px; }  
   .test3::after { width: 400px; }
   
   h2 {
@@ -337,7 +338,7 @@ h3 {
 @media only screen and (max-width: 825px){
   /* DONT DELETE ANY OF THESE IT MESSES UP THE BUTTONS */
 
-  
+
   /* .copyarea, .hero, .rgraphic, .leftgraphic {
     display: none;
   } */
