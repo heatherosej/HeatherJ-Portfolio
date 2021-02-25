@@ -395,7 +395,9 @@ h3 {
   flex-direction: column-reverse;
   margin-bottom: 2rem;
   align-items: center;
-  margin: 50px 0px 25px 0px;
+  margin: 50px 2em 25px 0px;
+  max-width: 86%;
+  /* margin-left: 2em; */
 }
 .copyareaMobile{
   display: flex;
@@ -420,9 +422,8 @@ align-self: center;
 margin-top: 1.5em !important;
 }
 .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
-  font-size: .8em;
+  font-size: 1em;
 }
-
 .btn-primary{
 width: 10em;
 }
@@ -438,50 +439,85 @@ width: 10em;
 } */
 
 @media only screen and (max-width: 700px){
-  .copyarea{
+  .copyareamobile{
     margin-top: -1.5em;
   }
   }
 @media only screen and (max-width: 640px){
-    .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
-      font-size: .75em;
-    }
+    /* .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
+      font-size: .75em; } */
     h3 {
       font-size: 1.3em;
       margin-bottom: 1em;
     }
   }
 @media only screen and (max-width: 700px){
-  .copyarea{
+  .copyareamobile{
     margin-top: -1.5em;
   }
   }
-@media only screen and (max-width: 600px){
-  .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
-    font-size: .7em;
+@media only screen and (max-width: 640px){
+  .rgraphic{
+    display: none;
   }
+  .copyareaMobile{
+    margin-left: 3em;
+  }
+
+  .heroMobile{
+    margin: 0em;
+  }
+
   h3 {
     font-size: 1.2em;
     margin-bottom: 1em;
   }
-}  
-@media only screen and (max-width: 400px){
   .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
-    font-size: .5em;
+    margin-left:-8em;
+  }
+  .stackcolumns{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .wrapperMobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: -6em;
+  }
+  .wrapperMobile{
+    display:none}
+  }
+}  
+/* /* @media only screen and (max-width: 400px){ */
+  .btn-primary, .btn-warning, .btn-danger, .btn-disabled {
+    font-size: .75em;
+    margin-left: -5em;
   }
   .copyarea{
     margin-top: -1.5em;
   }
+
+.heroMobile{
+  margin-left: 6em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+h3{font-size: 1em;}
+
 #name{
 font-size: 1.3em !important;
 }
-
-h3 {
+.allcontent{
+  margin-left:2.5em;
+}
+/* h3 {
     font-size: .9em !important;
     margin-bottom: 2.5em;
-  }
+  } */ 
 }    
-        
+         
 
 /* closing bracket for media query -- don't delete */
 }
