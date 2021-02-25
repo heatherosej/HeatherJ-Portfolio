@@ -273,6 +273,9 @@ h3 {
   display: none;
 }
 
+.mobileFlex, .copyareaMobile, .CTA-Buttons-mobile {
+  display: none;
+}
 
 .morestuffs {
   background-color: black;
