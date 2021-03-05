@@ -136,7 +136,7 @@ z-index: 999;
 .leftgraphic{
   display: flex; 
   width:10em;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   /* border: 2px solid blue; */
 }
 
@@ -156,7 +156,7 @@ z-index: 999;
 
 .brag{
   display: flex; 
-  width: 60em;
+  width: 90em;
   z-index: 0;
   margin-top: 6em;
   margin-left: 4em;
