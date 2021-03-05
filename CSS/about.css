@@ -145,7 +145,7 @@ z-index: 999;
   width: 250%;
   min-width: 6em;
   max-width: 15EM;
-  margin: 300px 0px -70px -55px;
+  margin: 150px 0px -70px -55px;
   transition: all 6s cubic-bezier(0,1,.98,0);
 }
 
@@ -235,6 +235,10 @@ h3 {
 .ethics{
   display: flex; 
   position: relative;
+}
+
+.hideme{
+  opacity:0; 
 }
 
 .wrap{
