@@ -273,7 +273,7 @@ h3 {
   display: none;
 }
 
-.mobileFlex, #namemobile, .copyareaMobile, .CTA-Buttons-mobile {
+.mobileFlex, #namemobile,.copyareaMobile, .CTA-Buttons-mobile {
   display: none;
 }
 
@@ -413,7 +413,7 @@ h3 {
 #namemobile{
   font-size: 1.5em !important;
   font-family: TradeGothicLTStd-boldExt;
-}
+}*/
 h3 {
   margin-bottom: 0 !important;
 } */
