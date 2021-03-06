@@ -1,5 +1,5 @@
 $(function(){  // $(document).ready shorthand
-    $('.ethics').fadeIn(slow);
+    $('.ethics').fadeIn('slow');
   });
   
   $(document).ready(function() {
