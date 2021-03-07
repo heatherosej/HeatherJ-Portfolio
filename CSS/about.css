@@ -21,7 +21,7 @@ html, body{
   border: none;
   cursor: pointer;
   background: transparent;
-  background-image: url('../Images/up_arrow.png');
+  background-image: url('./Images/up_arrow.png');
   background-repeat: no-repeat;
   width: 41px;
   height: 41px;
@@ -30,7 +30,7 @@ html, body{
 }
 
 .arrow-up:hover {
-  background-image: url('../Images/up_arrow_2.png');
+  background-image: url('./Images/up_arrow_2.png');
   box-shadow: 3px 3px 0px #FABD3F;
 }
 
@@ -49,9 +49,9 @@ html, body{
 .arrow-up:active, .arrow-up:focus {
   outline: none;
 }
-#ups{
+/* #ups{
   z-index: 2
-}
+} */
 
 body {
   font-family: work-sans, sans-serif;
