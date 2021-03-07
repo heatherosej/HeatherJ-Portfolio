@@ -511,11 +511,6 @@ The Idea / The Details
   justify-content: space-between;
 }
 
-.orange-box {
-  /* display: flex;
-  align-items: flex-start; */
-}
-
 .orange-box > div {
   margin: 1em 0;
   margin-bottom: .5em;
@@ -589,10 +584,6 @@ The Idea / The Details
   justify-content: center;
   align-items: center;
   height: 180px;
-}
-
-.data-percentages > div {
-  /* border: 1px solid red; */
 }
 
 .data-percentages p {
@@ -1168,10 +1159,6 @@ The Idea / The Details
   margin-top: 4em;
 }
 
-.pd-left p {
-  /* padding-right: 2em; */
-}
-
 .pd-left .top  {
   margin-bottom: 2em;
   gap: 3em;
@@ -1438,10 +1425,6 @@ The Idea / The Details
 
   .social-para-short {
     max-width: 100%;
-  }
-
-  .bottom {
-    f
   }
 
   .phone-demos-sec {
