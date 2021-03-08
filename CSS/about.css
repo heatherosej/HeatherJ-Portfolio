@@ -314,7 +314,7 @@ h3 {
   border: none;
   cursor: pointer;
   background: transparent;
-  background-image: url('../Images/up_arrow.png');
+  background-image: url('https://www.dropbox.com/s/bhwt88pl4c6tcyw/up_arrow.png?dl=0');
   background-repeat: no-repeat;
   width: 41px;
   height: 41px;
@@ -323,7 +323,7 @@ h3 {
 }
 
 .arrow-up:hover {
-  background-image: url('../Images/up_arrow_2.png');
+  background-image: url('https://www.dropbox.com/s/9b1s3d6oz2zar0v/up_arrow_2.png?dl=0');
   box-shadow: 3px 3px 0px #FABD3F;
 }
 

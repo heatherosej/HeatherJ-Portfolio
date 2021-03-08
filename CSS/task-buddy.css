@@ -562,7 +562,7 @@ The Idea / The Details
 
 .the-data  .task-buddy-h1,
 .the-content-strategy .task-buddy-h1,
-.the-product-design .task-buddy-h1
+.the-product-design .task-buddy-h1 .take-away #the-takeaway
 {
   padding-top: 1em;
 }
@@ -1346,7 +1346,7 @@ The Idea / The Details
 .take-away .task-buddy-h1::after {
   margin-left: 340px;
 }
-
+.take-away{margin-top: 4.5em !important;}
 .the-end {
   margin-top: 150px;
   text-align: center;
