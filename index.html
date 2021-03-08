@@ -8,6 +8,7 @@
   <link href="./CSS/index-0216.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="./CSS/new.css">
   <script src="https://kit.fontawesome.com/c304a9fe94.js" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
 
@@ -36,6 +37,11 @@
       </button>
     </div>
   </header>
+
+  <script>
+    $(document).ready(function()
+    {$("#work").hide().fadeIn(1200);});
+</script>
 
     <!-- Hero -->
     <section class="herocontent">
@@ -73,7 +79,7 @@
         <div class="middle-rgraphic">
             <img src="Images/circles.svg" id="CIRCLE">
         </div>
-        <div class="section group">
+        <div class="section group" id="work">
             <div class="col span_1_of_2">
                 <a href="task-buddy.html"><img src="Images/TB_home.png" id="tb"></a>
             </div>
