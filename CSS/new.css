@@ -46,10 +46,7 @@
     position: relative;
     display: flex;
 }
-#work{
-    display: none;
-    z-index: 2;
-}
+
 .hero-inner img {
     width: 256px !important;
 }
