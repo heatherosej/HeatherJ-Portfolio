@@ -1346,7 +1346,10 @@ The Idea / The Details
 .take-away .task-buddy-h1::after {
   margin-left: 340px;
 }
-.take-away{margin-top: 4.5em !important;}
+.take-away{margin-top: 4.5em !important;
+width: 95%;}
+
+
 .the-end {
   margin-top: 150px;
   text-align: center;

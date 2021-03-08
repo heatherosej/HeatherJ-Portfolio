@@ -314,7 +314,7 @@ h3 {
   border: none;
   cursor: pointer;
   background: transparent;
-  background-image: url('https://www.dropbox.com/s/bhwt88pl4c6tcyw/up_arrow.png');
+  background-image: url('https://previews.dropbox.com/p/thumb/ABHlAjjYGfTQTKWzedWJnAqKIeZ9cgYQmdQ8yuunF501Am9b6FnaWOaJmok1Qb7vwIZ5mcvxJ9nrpXN8O-u1hW4gfghRjfEQl8a6CSsEpC06LJ7zQ4bXmaLhn6Vyid1cf2hHnSDtcCJHmJRIeuFG6017eVe7fqBHmCxZL9vIiIQFMiQg-jEYFG9hadvSRl7E1HTssLqLdmh_gbGDuRIhGEN_oUNuIrNPxzB9vu7SpBLJfhKzSlkREDP8m2eKY2FEZdq-6TyC_cp3zmwHMEN7qZpfHHA8Z-pBXhCtaxK2P6IYNrQCM_ebufQtF9XnW3XCMtsCvrKS9IyIDt-xtQElPM8rT1BoE_ZaixI4d4vFPsz6Gw/p.png?fv_content=true&size_mode=5');
   background-repeat: no-repeat;
   width: 41px;
   height: 41px;
@@ -323,7 +323,7 @@ h3 {
 }
 
 .arrow-up:hover {
-  background-image: url('https://www.dropbox.com/s/9b1s3d6oz2zar0v/up_arrow_2.png');
+  background-image: url('https://previews.dropbox.com/p/thumb/ABFfeJ6SKPdNovWEMHpcKBuj-UynzBvihGN5Y4rVmLvpzJX0cuNVPkF2r7cKZpK4VzUpAZZQAot3_v4vNzTxaKU4Ut9mY_oef505M_WFtxDZo6Pg8NsJ4KU65BLCOghDEhvXxwNQJCtnu_dMEv8Ck7FhgBtwUf1ib1-QaoeWfnScDGzUjaDmLzTHhmTiaFtpExOd8d9QMeEVTCyhqrfZeerxifozDJD7EUEWFImO8qukw83SmOzguzmvKjCWCcwkSzXzZGv4Mtgj67L48l_UA8zFH0ZRvVE9SRzVjgrXlS8szUsSBWvRw6rj_0A7uVdkpZYel9ThM2Ft6Bww4xXgz4JPPgYWlOAxM-OtSKHqHAVvow/p.png?fv_content=true&size_mode=5');
   box-shadow: 3px 3px 0px #FABD3F;
 }
 
