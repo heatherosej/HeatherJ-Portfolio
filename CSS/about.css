@@ -158,8 +158,9 @@ z-index: 999;
   display: flex; 
   width: 90em;
   z-index: 0;
-  margin-top: 6em;
+  margin-top: 4em;
   margin-left: 4em;
+  margin-bottom: 3em;
   /* border: 2px solid green; */
 }
 
@@ -245,7 +246,8 @@ h3 {
   display: flex;
   width: 100%;
    background-color: #fff;
-   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+   /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05); */
+   box-shadow: 0px -10px 7px rgba(0, 0, 0, 0.05);
    z-index: 0;
    position: relative;
    justify-content: space-around;
@@ -307,38 +309,28 @@ h3 {
 
 /* Arrow Up */
 .arrow-up {
-  position: fixed;
   bottom: 5%;
+  padding: 0;
   right: 2em;
-  z-index: 10;
-  border: none;
-  cursor: pointer;
-  background: transparent;
-  background-image: url('https://previews.dropbox.com/p/thumb/ABHlAjjYGfTQTKWzedWJnAqKIeZ9cgYQmdQ8yuunF501Am9b6FnaWOaJmok1Qb7vwIZ5mcvxJ9nrpXN8O-u1hW4gfghRjfEQl8a6CSsEpC06LJ7zQ4bXmaLhn6Vyid1cf2hHnSDtcCJHmJRIeuFG6017eVe7fqBHmCxZL9vIiIQFMiQg-jEYFG9hadvSRl7E1HTssLqLdmh_gbGDuRIhGEN_oUNuIrNPxzB9vu7SpBLJfhKzSlkREDP8m2eKY2FEZdq-6TyC_cp3zmwHMEN7qZpfHHA8Z-pBXhCtaxK2P6IYNrQCM_ebufQtF9XnW3XCMtsCvrKS9IyIDt-xtQElPM8rT1BoE_ZaixI4d4vFPsz6Gw/p.png?fv_content=true&size_mode=5');
-  background-repeat: no-repeat;
   width: 41px;
   height: 41px;
+  border: none;
+  z-index: 10001;
+  cursor: pointer;
+  position: fixed;
   visibility: hidden;
-  padding: 1em;
+  background: transparent;
+  background-repeat: no-repeat;
 }
 
 .arrow-up:hover {
-  background-image: url('https://previews.dropbox.com/p/thumb/ABFfeJ6SKPdNovWEMHpcKBuj-UynzBvihGN5Y4rVmLvpzJX0cuNVPkF2r7cKZpK4VzUpAZZQAot3_v4vNzTxaKU4Ut9mY_oef505M_WFtxDZo6Pg8NsJ4KU65BLCOghDEhvXxwNQJCtnu_dMEv8Ck7FhgBtwUf1ib1-QaoeWfnScDGzUjaDmLzTHhmTiaFtpExOd8d9QMeEVTCyhqrfZeerxifozDJD7EUEWFImO8qukw83SmOzguzmvKjCWCcwkSzXzZGv4Mtgj67L48l_UA8zFH0ZRvVE9SRzVjgrXlS8szUsSBWvRw6rj_0A7uVdkpZYel9ThM2Ft6Bww4xXgz4JPPgYWlOAxM-OtSKHqHAVvow/p.png?fv_content=true&size_mode=5');
   box-shadow: 3px 3px 0px #FABD3F;
 }
 
-.arrow-up::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #dff1f3;
-  animation: ping 2s linear infinite;
-  animation-timing-function:cubic-bezier(0.86, 0, 0.07, 1);
-}
 
+.arrow-up:active, .arrow-up:focus {
+  outline: none;
+}
 .arrow-up:active, .arrow-up:focus {
   outline: none;
 }
