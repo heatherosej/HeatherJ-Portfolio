@@ -19,10 +19,11 @@
   max-width: 100%;
   min-width: auto;
   margin-left: 0px;
+max-height: 500px;
 }
 
 .headline {
-  margin-top: 55px;
+  margin-top: 23px;
   margin-bottom: 26px;
   margin-left: 61px;
   border-top: 10px none #a5ecec;
@@ -36,7 +37,7 @@
   grid-column-gap: 20px;
   grid-template-areas: "Area";
   -ms-grid-columns: 2.75fr 20px 1fr;
-  grid-template-columns: 2.75fr 1fr;
+  grid-template-columns: 3.75fr 2fr;
   -ms-grid-rows: auto minmax(auto, 1fr);
   grid-template-rows: auto minmax(auto, 1fr);
 }
@@ -60,6 +61,10 @@
   margin-top: 369px;
   margin-right: 49px;
   margin-left: 61px;
+}
+.processimg {
+  max-width: 100%;
+  margin-left: 0px;
 }
 
 @media screen and (max-width: 991px) {

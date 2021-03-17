@@ -146,6 +146,11 @@ h3 {
   z-index: -1;
 }
 
+.processimg {
+  max-width: 100%;
+  margin-left: 0px;
+}
+
 /* Arrow Up animation */
 .arrow-up {
   position: fixed;
