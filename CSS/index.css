@@ -95,10 +95,13 @@ a {
   font-size: 1.75rem;
     letter-spacing: 0em;
 } 
-
+.compass{
+line-height: 1.7em;
+}
 h3 {
   font-size: 2em;
-  letter-spacing: .1em;
+  /* letter-spacing: .1em; */
+  margin-top: -1px;
   font-family: 'TradeGothicLTStd-boldExt', sans-serif;
 }
 #cta {
@@ -119,6 +122,10 @@ h3 {
 #CIRCLE:hover {
   transform: rotate(120deg);
   -webkit-transform: rotate(120deg);
+}
+
+#bold {
+  font-weight: 600;
 }
 
 /*  SECTIONS  */
@@ -399,6 +406,9 @@ h2 {
   .group > div {
       width: 100%;
   }
+  #tb{
+    margin-top: -4px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -415,5 +425,10 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
+.span_2_of_2, .span_1_of_2 { width: 100%; }
+  
+.mintline::after{
+  width: 300px;
+}
+
 }
